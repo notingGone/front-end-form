@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="form.css">
+  <title>Survey Says:</title>
+</head>
+<body>
+  <div id="heading">
+    <h1 id="title">survey</h1>
+    <p id="description">about nothing</p>
+  </div>
+  <form id="survey-form">
+    <fieldset>
+      <legend>Please take a moment to answer some questions: </legend>
+      <p>
+        <label id="name-label" for="name"><span class="asterisk">*</span>name: </label>
+        <input id="name" type="text" placeholder="Please tell us your name" required>
+        <label id="email-label" for="email"><span class="asterisk">*</span>email: </label>
+        <input id="email" type="email" placeholder="Please enter your email" required>
+        <label id="number-label" for="number">number: </label>
+        <input id="number" type="number" placeholder="Lucky number?" min=2 max=10>
+        <label id="dropdown-label" for="dropdown">where would you rather live? </label><br>
+        <select id="dropdown">
+          <option value="">choose one</option>
+          <option value="USA">United States of America</option>
+          <option value="CAN">Canada</option>
+          <option value="MEX">Mexico</option>
+          <option value="CHI">China</option>
+          <option value="GRC">Greece</option>
+          <option value="MOO">The Moon</option>
+        </select>
+      <div>please rate this survey: </div>
+      <p id="rating-box">
+        <input type="radio" name="rating" value="1">*
+        <input type="radio" name="rating" value="2">**
+        <input type="radio" name="rating" value="3">***
+        <input type="radio" name="rating" value="4">****
+        <input type="radio" name="rating" value="5">*****
+      </p>
+      <div>???</div>
+      <p id="spam-box">
+        <input type="checkbox" value="spam">spam
+        <input type="checkbox" value="spam">spam
+        <input type="checkbox" value="spam">spam
+        <input type="checkbox" value="eggs">eggs
+        <input type="checkbox" value="spam">spam
+      </p>
+        <textarea rows="5" placeholder="Please tell us how you feel"></textarea>
+      <input type="submit" id="submit" value="Submit">
+      <div class="required-box">
+        <span class="asterisk">*</span><span class="required-text">required field</span>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
